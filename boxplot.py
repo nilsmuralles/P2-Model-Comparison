@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-df = pd.read_csv("Datos.csv")
+df = pd.read_csv("data/raw/Datos.csv")
 df = df.drop(columns=["Sample code number", "Class"])
 
 variables = df.columns.tolist()
